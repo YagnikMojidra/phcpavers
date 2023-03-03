@@ -1,7 +1,6 @@
 class Home{
 
     constructor(){
-        // $("#navbarToggle").hide();
         $("#btnSubmit").on('click',()=>{this.sendData();});
         this.mathMedia();
     }
@@ -66,7 +65,21 @@ class Home{
 
     sendData(){
         if(this.validationUser()){
-            console.log("Validation Sucess.");
+            let name=$("#txtName").val();
+            let number=$("#txtNumber").val();
+            let address=$("#txtAddress").val();
+
+            // Email.send({
+            //     Host: "smtp.gmail.com",
+            //     Username: "mojidrayagnik@gmail.com",
+            //     Password: "ldbmzvxgykhlfysb",
+            //     From: "mojidrayagnik@gmail.com",
+            //     To: "mojidrayagnik@gmail.com",
+            //     Subject: "Paver Related Contact ",
+            //     Body: `Name is: ${name},\nAddress is: ${address},\nNumber is :${number}`,
+            //   }).then((value)=>{
+            //     Swal.fire("Sucess");
+            //   })
         }
     }
 
@@ -78,7 +91,6 @@ class Home{
             $("#navbar-menu a").hide();
             $("#navbarToggle").on("click",()=>{
                     $("#navbar-menu a").slideToggle();
-
             });
         }
     }
