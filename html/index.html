@@ -11,6 +11,7 @@
   <link type="text/css" rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
   <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="../sweetalert2/sweetalert.js"></script>
+  <script type="text/javascript" src="../js/smtp.js"></script>
 
   <link rel="stylesheet" href="../css/index.css" type="text/css">
   <link rel="shortcut icon" href="../image/favicon.png" type="image/x-icon" alt="phc pavers">
@@ -18,6 +19,7 @@
 </head>
 
 <body>
+
   <div class="container">
 
     <!-- navbar started here -->
@@ -26,9 +28,11 @@
         <div class="col-2">
           <a href="index.html"><img class="img-fluid navbar-logo" src="../image/phc pavers logo transparent.png"
               alt="phc pavers"></a>
-          <button class=" btn" type="button" id="navbarToggle"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-          </svg></button>
+          <button class=" btn" type="button" id="navbarToggle"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+              height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg></button>
         </div>
         <div class="col-2 home" id="navbar-menu"><a href="index.html"> Home </a></div>
         <div class="col-2 products" id="navbar-menu"><a href="#product-content">Products</a></div>
@@ -49,7 +53,7 @@
 
     <!-- product page started here -->
     <div class="product-content" id="product-content">
-      <p class="display-4" style="text-align: center;color: #000000;">Products</p>
+      <span class="display-4" style="color: #000000;">Products</span>
       <div class="container">
         <div id="carousel" class="carousel slide">
           <div class="carousel-inner">
@@ -100,7 +104,7 @@
                 </div>
               </div>
             </div>
-
+            
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -116,7 +120,7 @@
 
     <!-- gallary page started here -->
     <div class="galary-content" id="galary-content">
-      <p class="display-4" style="text-align: center;color: #000000;">Galary</p>
+      <span class="display-4">Galary</span>
       <div class="container">
         <div id="carousel2" class="carousel slide">
           <div class="carousel-inner">
@@ -223,7 +227,7 @@
 
     <!-- about content started here -->
     <div class="about-content" id="about">
-      <h1 class="display-4" style="text-align: center;color: #000000;"> About Us </h1>
+      <span class="display-4"> About Us </span>
       <p class="display-6"> <sup>"</sup> We Produce Best Qulity, </p>
       <p class="display-6"> We Provide Best Qulity for Infrastructure, </p>
       <p class="display-6"> We Provide Best Qulity of Pavers. <sup>"</sup> </p>
@@ -231,7 +235,7 @@
 
     <!-- contact started here -->
     <div class="contact-content" id="contact">
-      <p class="display-4" style="color:#000000">Contact Us</p>
+      <span class="display-4" style="color:#000000">Contact Us</span>
       <div id="contact-content">
         <div class="container col-xxl-6">
           <input type="text" class="form-control" id="txtName" placeholder="Name">
@@ -242,7 +246,7 @@
         <div class="container col-xxl-6">
           <textarea class="form-control" id="txtAddress" cols="30" rows="4" placeholder="Address"></textarea>
         </div>
-        <div class="container col-xxl-6">
+        <div class="container col-md-6">
           <button class="btn btn-danger btn-group-lg" type="button" id="btnSubmit">Submit</button>
         </div>
       </div>
@@ -266,6 +270,7 @@
     </footer>
 
   </div>
+
   <script src="../js/index.js" type="text/javascript"></script>
 </body>
 
