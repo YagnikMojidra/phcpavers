@@ -49,7 +49,6 @@
     color: #000000;
     font-weight: 200;
     font-size: 23px;
-    /* text-decoration: dotted underline; */
 }
 
 .home a:hover,
@@ -329,7 +328,8 @@ textarea::placeholder {
     /* for all the element styling is this */
     * {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 20px;
+        font-size: 15px;
+        /* width: auto !important; */
     }
 
     /* navabar started here */
@@ -337,6 +337,7 @@ textarea::placeholder {
         border: 0px solid rgba(255, 99, 2, 0.447);
         border-radius: 40px 50px;
         background-color: #f0f0f0;
+        width: auto !important;
     }
 
 
@@ -372,9 +373,17 @@ textarea::placeholder {
         cursor: pointer;
         color: #000000;
         font-weight: 900;
-        font-size: 23px;
         margin: 5px;
     }
+
+    .home a,
+    .products a,
+    .galary a,
+    .about a,
+    .contact a {
+        font-size: 16px;
+    }
+
 
     /* home content started here */
     .home-content {
@@ -382,6 +391,7 @@ textarea::placeholder {
         border-radius: 40px 50px;
         background-color: #f0f0f0;
         height: 440px;
+        width: auto !important;
     }
 
     .home-content .container {
@@ -393,7 +403,7 @@ textarea::placeholder {
         text-decoration: none;
         color: #000000;
         font-weight: 850;
-        font-size: 40px;
+        font-size: 30px;
         margin-top: 15px;
         border-bottom: 15px solid rgba(175, 174, 173, 0.447);
         border-top: 15px solid rgba(175, 174, 173, 0.447);
@@ -406,7 +416,7 @@ textarea::placeholder {
         color: #000000;
         font-weight: 750;
         margin-top: 60px;
-        font-size: 38px;
+        font-size: 30px;
         border-bottom: 15px solid rgba(175, 174, 173, 0.447);
         border-top: 15px solid rgba(175, 174, 173, 0.447);
         border-radius: 40px 50px;
@@ -417,7 +427,7 @@ textarea::placeholder {
         text-decoration: none;
         color: #2d0000;
         font-weight: 650;
-        font-size: 35px;
+        font-size: 30px;
         margin-top: 60px;
         border-bottom: 15px solid rgba(175, 174, 173, 0.447);
         border-top: 15px solid rgba(175, 174, 173, 0.447);
@@ -431,6 +441,7 @@ textarea::placeholder {
         border: 0px solid rgba(255, 99, 2, 0.447);
         border-radius: 40px 50px;
         background-color: #f0f0f0;
+        width: auto!important;
     }
 
     .product-content span {
@@ -459,9 +470,10 @@ textarea::placeholder {
         height: 250px;
     }
 
-    .product-content .card-body{
+    .product-content .card-body {
         padding: 1rem 2rem;
     }
+
     .product-content .card-body .list-group-flush>.list-group-item {
         padding: 2px;
         font-size: 15px;
@@ -481,13 +493,13 @@ textarea::placeholder {
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
         filter: invert(70%);
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 35px;
     }
 
     .product-content .carousel-control-prev,
     .carousel-control-next {
-        margin-top: 70px;
+        margin-top: 95px;
     }
 
     /* galary content started here */
@@ -497,6 +509,7 @@ textarea::placeholder {
         border: 0px solid rgba(255, 99, 2, 0.447);
         border-radius: 40px 50px;
         background-color: #f0f0f0;
+        width: auto!important;
     }
 
     .galary-content span {
@@ -505,7 +518,7 @@ textarea::placeholder {
         font-size: 50px;
         font-weight: 900;
         border-bottom: 10px solid rgba(248, 136, 66, 0.447);
-        border-top: 10px solid rgba(133,133,133);
+        border-top: 10px solid rgba(133, 133, 133);
         border-radius: 40px 50px;
     }
 
@@ -527,19 +540,19 @@ textarea::placeholder {
 
     #zigzag-card-design {
         margin: auto;
-        width: 300px;
-        height: 300px;
+        width: 241px;
+        height: 291px;
 
     }
 
     #carousel2 .carousel-control-prev {
         margin-top: 30px;
-        margin-left: -25px;
+        margin-left: -40px;
     }
 
     #carousel2 .carousel-control-next {
         margin-top: 30px;
-        margin-right: -25px;
+        margin-right: -40px;
     }
 
     /* about content started here */
@@ -550,15 +563,16 @@ textarea::placeholder {
         border: 0px solid rgba(255, 99, 2, 0.447);
         border-radius: 40px 50px;
         background-color: #f0f0f0;
+        width: auto!important;
     }
 
-    .about-content span{
+    .about-content span {
         display: table;
         margin: 10px auto;
         font-size: 50px;
         font-weight: 900;
         border-bottom: 10px solid rgba(248, 136, 66, 0.447);
-        border-top: 10px solid rgba(133,133,133);
+        border-top: 10px solid rgba(133, 133, 133);
         border-radius: 40px 50px;
     }
 
@@ -577,6 +591,7 @@ textarea::placeholder {
         border: 0px solid rgba(255, 99, 2, 0.447);
         border-radius: 40px 50px;
         background-color: #f0f0f0;
+        width: auto!important;
     }
 
     .contact-content p {
@@ -587,15 +602,16 @@ textarea::placeholder {
         border-radius: 50px 50px;
     }
 
-    .contact-content span{
+    .contact-content span {
         display: table;
         margin: 10px auto;
         font-size: 50px;
         font-weight: 900;
         border-bottom: 10px solid rgba(248, 136, 66, 0.447);
-        border-top: 10px solid rgba(133,133,133);
+        border-top: 10px solid rgba(133, 133, 133);
         border-radius: 40px 50px;
     }
+
     #contact-content div input,
     #contact-content div textarea {
         margin-left: 5px;
@@ -631,7 +647,7 @@ textarea::placeholder {
     }
 
     .footer-img .img-fluid {
-        max-width: 115%;
+        max-width: 105%;
     }
 
     .footer-description {
